@@ -228,7 +228,7 @@ public class HundirLaFLota {
 	public static boolean evaluarTiro(char[][] mapa, int[] t) {
 		int fila = t[0];
 		int columna = t[1];
-		return (mapa[fila][columna] == AGUA_NO_TOCADO || (mapa[fila][columna] >= '1' && mapa[fila][columna] <= '5'));
+		return (mapa[fila][columna] == AGUA_NO_TOCADO || (mapa[fila][columna] > '0' && mapa[fila][columna] < '6'));
 	}
 	
 	private static int actualizarMapa(char[][] mapa, int[] t, int puntos) {
